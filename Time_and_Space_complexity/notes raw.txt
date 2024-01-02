@@ -1,0 +1,349 @@
+
+
+   Time and space complexity (in javascript) 
+
+
+1) Big O - It is a 
+
+How do we determine which code is better?
+
+Big O is a way to mathematically figure out which of these codes is better and which one runs more than other , whether we are considering the case of time complexity or space complexity.
+
+
+Time complexity -
+let's say we run a two code an one  runs in 10 sec and other one runs till 30sec so by this measure we say code 1 is better . 
+
+we don't measure time complexity in time we do that using number of operations .
+
+
+Space complexity - In this a code uses less memory than other code .
+
+video 2-
+
+Three greek letter we will see in the time complexity or space complexity.
+
+1) omega . 
+2) theta. 
+3) omicron (big O)
+
+The best case is represent by omega , average case is represented by theta and worst case is represented by omicron (big O) .
+
+so there is no best case big O  or avg case  big O . As big O always mean worst case .
+
+
+------------------
+
+video 3 
+
+	Drop constants.
+
+ Drop constants is also referred as remove constants.
+
+ -
+for example 
+
+function logItems(n){
+
+for (let i = 0;i<n;i++){
+
+console.log(i);
+}
+
+for(let j = 0;j<n;j++){
+console.log(j)
+}
+}
+logItems(3);
+
+
+so when we run this code we will see  that the output we got is 
+0
+1
+2
+0
+1
+2
+   (1 n from the first for loop and the other n numbers from the second for loop )
+
+and now we see that our code ran for(n+n times) 2n times for the worst case
+
+so , big O(2n) and what we do is we drop the constants and we say that our code run for 
+ O(n).
+
+________________
+
+Video 4)
+
+O(n2)
+
+so NOW we will look for big O of n square . 
+
+for example .
+
+
+function logItems(n){
+
+for (let i = 0;i<n;i++){
+
+for(let j = 0;j<n;j++){
+console.log(i ,j)
+}
+}
+
+}
+logItems(3);
+
+The output which we got 
+
+0 0
+0 1
+
+0 0
+0 1
+0 2
+1 0
+1 1
+1 2
+2 0
+2 1
+2 2
+
+NOW , as this is a nested loop , we see that we got the output total 9 times which is 3 *3 i.e we got output as n*n
+
+so ,   This is O (n2) and now even if we get O (n3) or O(n4) we are gonna still write it as O(n2) . ** WE ARE gonna simplify this**
+
+
+for example .
+
+
+function logItems(n){
+
+for (let i = 0;i<n;i++){
+
+for(let j = 0;j<n;j++){
+for(let k = 0;k<n;j++){
+console.log(i ,j ,k);
+}
+}
+}
+
+}
+logItems(3);
+
+so the time complexity of this code is still O(n2)
+
+
+---------------------
+
+video 5)
+
+Drop Non - Dominants.
+ 
+
+- Basically we take the worst case and leave the other case . 
+
+for example.
+
+
+function logItems(n){
+
+for (let i = 0;i<n;i++){
+
+for(let j = 0;j<n;j++){
+console.log(i ,j)
+}
+}
+
+for(let k = 0;k<n;k++){
+console.log(k)
+}
+}
+logItems(3);
+
+
+So when we see the output we will see the output we will see that the first nested for loop ran for O(n2) time and the second outside loop ran for O(n) timese so if we find out total time complexity then 
+
+T = O(n2 +n) 
+So , n is insignificant compared to n square and it is not really affecting the number of operations .
+for example if we take n = 100 then n2 willbe = 10000 and n= 100 so that's not afffecting the number of operations and so we ignore it and take.
+So , we remove n and we drop NON - DOMINANTS and SO .
+
+O(n2) as worst case time complexity .
+
+
+---------------------------
+
+VIDEO 7
+
+  1)  O(1)----It is also referred as constant time .
+IT is the most efficient in terms of time complexity . NOTHING IS MORE EFFICIENT THAN O(1)
+
+
+for example
+
+
+function addItems(n){
+
+return n+n
+}
+
+In the above code all we are doing is one operation and that is addition . 
+  So, it doesn't matter is n is 1 or n is million the number of operations is going to be one .
+
+
+
+let's take  another code 
+
+
+function addItems(n){
+
+return n+n
+}
+
+
+In the above code we are doing two operations .We are doing two addition  But it still O(1) as we are simplifying this .
+
+So O(1) is referred to as constant times , so this situation here where we have two operations (two additions ), It's two operations that ist constant , no matter what it is , the numbeer of operations does not change  as n changes .
+
+
+NOTE - BASICALLY Time complexity is the measurement of no of operations . so in above case the number of operations is still 1.
+
+
+
+-------------------------------
+
+video 8)
+
+1) O(log n)
+
+
+for example .
+
+we have an sorted array and we want to find one element in that array using binary search . 
+
+so what we do is we cut this  in half each time until we find items or we don't .
+
+example -
+we have an array and we want to find out 1 in it 
+[1,2,3,4,5,6,7,8]
+
+ we will  find this way 
+[1,2,3,4,5,6,7,8]
+[1,2,3,4]
+[1,2]
+[1] so , in 3 steps we got the item for size of n array . 
+therefore
+
+2^3 = 8 ;
+
+log base 2 8 = 3
+
+so time complexity = O( log n base 2)
+
+
+THIS is known as divide and conquer .
+ 
+we also have O(n logn)  for sorting algorithm 
+----------------------------------------
+
+
+video 9)
+
+Different Terms for Inputs.
+
+When we have diffferent inputs and the code run for different different time then what we do to calculate Time complexity .
+
+
+example 
+
+
+function logItems(a,b){
+
+for(let j = 0;j<a;j++){
+console.log(i )
+}
+
+for(let k = 0;k<b;k++){
+console.log(k)
+}
+}
+
+
+So here both loop runs for different times for example a can be 10 but can be million so we cannot say that time complexity is O(n+n) O(2n) and O(n) 
+
+
+so here The time complexity willbe O(a+b) because this is as far as we can simplify this .
+
+
+
+2) And this is also true for the nested loop 
+
+
+
+function logItems(a,b){
+
+for(let j = 0;j<a;j++){
+for(let k = 0;k<b;k++){
+console.log(k)
+}
+}
+
+}
+
+In this case our time complexity will be O(a*b)
+
+
+-------------------------
+Video 10)
+
+ 	Big of Arrays.
+
+
+let's take an array
+
+let myArray =[11, 3,23,7]
+
+1) push and pop are  O(1) time complexity operations we don't need to change indices of the array .
+2) but shift and unshift  are different because we have to re Index every n element in the array that's why O(n) operations so time complexity O(n) .
+
+3) Now let's look at adding or removing something from the middle of the array .
+
+for example 
+
+myArray .splice(1,0,"hi")
+
+so we still have to reIndex the array elements from the point we add or remove elements .
+
+so T= O(1/2 n) 
+but we don't take avg case in big O  we take worst case and also we remove constant so therefore.
+
+T = O(n)
+
+4) Now let's look at finding an item in an array .
+let's say we want to find 7
+
+a) if we search by value (linear search ) then time complexity .
+
+T = O(n)
+
+b)Search by index .
+
+exp if we say what it at index 33 , so this is just one operation therefore O(1).
+
+
+
+Note - If  you need to access things by index arrays are a great data structure and if you need to add or remove things from the beginning  so maybe not best data structure for you and maybe you should look at a different data structure .
+
+
+---------------------
+
+
+Video 11 
+
+
+I want to attach three image here make notes for github like that
+
+
+
+
+
