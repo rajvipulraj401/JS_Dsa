@@ -1,19 +1,76 @@
-```markdown```
+
+
 # Time and Space Complexity in JavaScript
+
+## Which Code is Best?
+
+## There are 3 pillars that we check to answer this:
+
+1. **Readability of the Code**
+2. **Memory Consumption (Space Complexity)**
+3. **Speed or Number of Operations (Time Complexity)**
+
+## Scalable Code Notes
+
+**Key Goal:** Code that handles more work/data without slowdowns or major changes.
+
+### Characteristics
+
+1. **Efficient Algorithms:**
+   - Low time/space complexity (Merge Sort, Hashing, DP).
+
+2. **Modular Design:**
+   - Smaller, independent modules with clear interfaces.
+   - Aimed for reuse, maintainability, and parallel execution.
+
+3. **Data Structure Optimization:**
+   - Choose based on task needs (Hash tables, trees, linked lists).
+
+4. **Caching:**
+   - Store frequently accessed data for faster retrieval.
+
+5. **Load Balancing:**
+   - Distribute work across multiple systems to avoid bottlenecks.
+
+6. **Async Programming:**
+   - Handle long tasks without blocking others (I/O, DB calls).
+
+7. **Concurrency:**
+   - Run multiple tasks simultaneously (multi-core systems, careful sync needed).
+
+8. **Cloud Infrastructure:**
+   - Dynamically provision resources based on demand.
+   - Ensures cost-effectiveness and flexibility.
+
+9. **Continuous Monitoring:**
+   - Regularly check performance and address bottlenecks proactively.
+
+10. **Optimization:**
+    - Improve code, algorithms, and infrastructure for ongoing efficiency.
+
+**Think of it like a flexible building:**
+   - Designed to expand with more people (data/work).
+   - Smaller, well-connected rooms (modules).
+   - Efficient storage solutions (data structures).
+   - Optimized pathways and services (caching, load balancing).
+   - Adaptable infrastructure (cloud).
+   - Regular maintenance and improvements (monitoring, optimization).
+   - Scalable code is future-proof!
+
 
 ## Overview
 
 Big O is a mathematical measure to evaluate code efficiency in terms of time and space complexity.
 
-### Time Complexity
+## Time Complexity
 
 Measured by the number of operations, not actual time. Determines which code runs faster.
 
-### Space Complexity
+## Space Complexity
 
 Measures memory usage, comparing how much space different codes use.
 
-## Greek Letters and Cases
+#### Greek Letters and Cases
 
 Three Greek letters represent different cases in time and space complexity:
 
@@ -274,3 +331,94 @@ T = O(n)
 ![Image 2](JS_Dsa/Time_and_Space_complexity/image2.png)
 ![Image 3](JS_Dsa/Time_and_Space_complexity/image3.png)
 ```
+
+
+#Big O Cheat Sheet:
+
+-Big Os
+
+O(1) Constant- no loops
+
+O(log N) Logarithmic- usually searching algorithms have log n if they are sorted (Binary Search)
+
+O(n) Linear- for loops, while loops through n items
+
+O(n log(n)) Log Liniear- usually sorting operations
+
+O(n^2) Quadratic- every element in a collection needs to be compared to ever other element. Two
+nested loops
+
+O(2^n) Exponential- recursive algorithms that solves a problem of size N
+
+O(n!) Factorial- you are adding a loop for every element
+
+**Iterating through half a collection is still O(n)**
+**Two separate collections: O(a * b)**
+
+## -What can cause time in a function?-
+
+Operations (+, -, *, /)
+Comparisons (<, >, ==)
+Looping (for, while)
+Outside Function call (function())
+
+## -Rule BookRule 1: Always worst Case
+Rule 2: Remove Constants
+Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be
+O(a*b)
++ for steps in order
+* for nested steps
+Rule 4: Drop Non-dominant terms
+
+# Space Complexity --
+
+when a programm executes things it has two way to remember things .
+
+1) Heap . - It is usually where we store variables that we assign value.
+2) Stack - It is where we keep track function call . 
+
+
+
+##-What causes Space complexity?-
+Variables
+Data Structures
+Function Call
+Allocations
+
+
+
+Example Code *practise space complexity )*
+
+```javascript
+// Function with O(1) space complexity
+function booo(n) {
+  for (let i = 0; i < n.length; i++) {
+    console.log("boooo!");
+  }
+}
+
+booo([1, 2, 3, 4, 5]); // O(1) space complexity.
+
+// Function creating an array of "hi" repeated N times
+function arrayOfHiNTimes(n) {
+  let hiArray = [];
+
+  for (let i = 0; i < n; i++) {
+    hiArray[i] = "hi";
+  }
+
+  return hiArray;
+}
+
+arrayOfHiNTimes(6); // O(n) space complexity as it creates an array with length N
+```
+
+
+**NOTE** - 
+`"hellllllldfdfljfsfjsf".length //O(1) Time complexity` 
+
+A `string length lookup in javascript` is not a `method` it is `just a property` (.length property) that's why it is justof O(1) . 
+ It can be different in other languages.
+
+
+# NOTE - BIG O says which functions , algorithm or code is best .
