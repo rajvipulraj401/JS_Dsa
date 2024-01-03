@@ -1,41 +1,61 @@
 ```markdown
+
 # Time and Space Complexity in JavaScript
 
+## Which Code is Best?
 
-## which code is best?
+### There are 3 pillars that we check to answer this:
 
-## There are 3 pillars that we check to answer this .
+1. **Readability of the Code**
+2. **Memory Consumption (Space Complexity)**
+3. **Speed or Number of Operations (Time Complexity)**
 
-1) Readability of the code .
-2) memory consumption (space complexity )
-3) speed it took or no of operations it took ( Time complexity)
+## Scalable Code Notes
 
+**Key Goal:** Code that handles more work/data without slowdowns or major changes.
 
-## Scalable Code Notes:
-Key Goal: Code that handles more work/data without slowdowns or major changes.
+### Characteristics
 
-Characteristics:
+1. **Efficient Algorithms:**
+   - Low time/space complexity (Merge Sort, Hashing, DP).
 
-Efficient Algorithms: Low time/space complexity (Merge Sort, Hashing, DP).
-Modular Design: Smaller, independent modules with clear interfaces (for reuse, maintainability, parallel execution).
-Data Struct. Optimization: Choose based on task needs (Hash tables, trees, linked lists).
-Caching: Store frequently accessed data for faster retrieval.
-Load Balancing: Distribute work across multiple systems to avoid bottlenecks.
-Async Programming: Handle long tasks without blocking others (I/O, DB calls).
-Concurrency: Run multiple tasks simultaneously (multi-core systems, careful sync needed).
-Cloud Infrastructure: Dynamically provision resources based on demand (cost-effective, flexible).
-Continuous Monitoring: Regularly check performance and address bottlenecks proactively.
-Optimization: Improve code, algorithms, and infrastructure for ongoing efficiency.
-Think of it like a flexible building:
+2. **Modular Design:**
+   - Smaller, independent modules with clear interfaces.
+   - Aimed for reuse, maintainability, and parallel execution.
 
-Designed to expand with more people (data/work).
-Smaller, well-connected rooms (modules).
-Efficient storage solutions (data structures).
-Optimized pathways and services (caching, load balancing).
-Adaptable infrastructure (cloud).
-Regular maintenance and improvements (monitoring, optimization).
-Scalable code is future-proof!
+3. **Data Structure Optimization:**
+   - Choose based on task needs (Hash tables, trees, linked lists).
 
+4. **Caching:**
+   - Store frequently accessed data for faster retrieval.
+
+5. **Load Balancing:**
+   - Distribute work across multiple systems to avoid bottlenecks.
+
+6. **Async Programming:**
+   - Handle long tasks without blocking others (I/O, DB calls).
+
+7. **Concurrency:**
+   - Run multiple tasks simultaneously (multi-core systems, careful sync needed).
+
+8. **Cloud Infrastructure:**
+   - Dynamically provision resources based on demand.
+   - Ensures cost-effectiveness and flexibility.
+
+9. **Continuous Monitoring:**
+   - Regularly check performance and address bottlenecks proactively.
+
+10. **Optimization:**
+    - Improve code, algorithms, and infrastructure for ongoing efficiency.
+
+**Think of it like a flexible building:**
+   - Designed to expand with more people (data/work).
+   - Smaller, well-connected rooms (modules).
+   - Efficient storage solutions (data structures).
+   - Optimized pathways and services (caching, load balancing).
+   - Adaptable infrastructure (cloud).
+   - Regular maintenance and improvements (monitoring, optimization).
+   - Scalable code is future-proof!
 
 
 ## Overview
@@ -315,7 +335,9 @@ T = O(n)
 
 #Big O Cheat Sheet:
 
--Big OsO(1) Constant- no loops
+-Big Os
+
+O(1) Constant- no loops
 
 O(log N) Logarithmic- usually searching algorithms have log n if they are sorted (Binary Search)
 
@@ -393,7 +415,7 @@ arrayOfHiNTimes(6); // O(n) space complexity as it creates an array with length 
 
 
 **NOTE** - 
-`"hellllllldfdfljfsfjsf".length //O(1)` 
+`"hellllllldfdfljfsfjsf".length //O(1) Time complexity` 
 
 A `string length lookup in javascript` is not a `method` it is `just a property` (.length property) that's why it is justof O(1) . 
  It can be different in other languages.
