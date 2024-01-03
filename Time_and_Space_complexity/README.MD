@@ -4,7 +4,7 @@
 
 ## Which Code is Best?
 
-### There are 3 pillars that we check to answer this:
+## There are 3 pillars that we check to answer this:
 
 1. **Readability of the Code**
 2. **Memory Consumption (Space Complexity)**
@@ -62,15 +62,15 @@
 
 Big O is a mathematical measure to evaluate code efficiency in terms of time and space complexity.
 
-### Time Complexity
+## Time Complexity
 
 Measured by the number of operations, not actual time. Determines which code runs faster.
 
-### Space Complexity
+## Space Complexity
 
 Measures memory usage, comparing how much space different codes use.
 
-## Greek Letters and Cases
+#### Greek Letters and Cases
 
 Three Greek letters represent different cases in time and space complexity:
 
