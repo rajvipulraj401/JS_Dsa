@@ -201,9 +201,9 @@ return n+n
 }
 
 
-In the above code we are doing two operations .We are doing two addition  But it still O(1) as we are simplifying this .
+In the above code we are doing four operations .We are doing four addition  But it still O(1) as we are simplifying this .
 
-So O(1) is referred to as constant times , so this situation here where we have two operations (two additions ), It's two operations that ist constant , no matter what it is , the numbeer of operations does not change  as n changes .
+So O(1) is referred to as constant times , so this situation here where we have four operations (two additions ), It's four operations that is constant , no matter what it is , the numbeer of operations does not change  as n changes .
 
 
 NOTE - BASICALLY Time complexity is the measurement of no of operations . so in above case the number of operations is still 1.
