@@ -1,5 +1,6 @@
-```markdown
+Certainly! Here's the full Markdown of the provided notes:
 
+```markdown
 # Time and Space Complexity in JavaScript
 
 ## Which Code is Best?
@@ -57,7 +58,6 @@
    - Regular maintenance and improvements (monitoring, optimization).
    - Scalable code is future-proof!
 
-
 ## Overview
 
 Big O is a mathematical measure to evaluate code efficiency in terms of time and space complexity.
@@ -108,8 +108,7 @@ function logItems(n) {
 2
 ```
 
-When we run this code, we observe that the output consists of `n` numbers from the first for loop and another `n` numbers from the second for loop. The code runs for (n + n) or 2n times in the worst case  and what we do is we drop the constants and we say that our code run for 
- O(n), so the time complexity is O(n).
+When we run this code, we observe that the output consists of `n` numbers from the first for loop and another `n` numbers from the second for loop. The code runs for (n + n) or 2n times in the worst case, and what we do is we drop the constants and we say that our code runs for O(n), so the time complexity is O(n).
 
 ## O(n^2) and Simplification
 
@@ -146,14 +145,14 @@ In this example, the nested loops result in a total of `n * n` outputs, so the t
 function logItems(n){
   for (let i = 0; i < n; i++){
     for (let j = 0; j < n; j++){
-      for (let k = 0; k < n; j++){
+      for (let k = 0; k < n; k++){
         console.log(i, j, k);
       }
     }
   }
 }
 
-// Time complexity is still O(n^2), not O(n^3)
+// Time complexity is still O(n^3), not O(n^2)
 ```
 
 ## Drop Non-Dominants
@@ -193,7 +192,7 @@ function logItems(n) {
 ```
 
 Here, the first nested for loop runs for O(n^2) time, and the second outside loop runs for O(n) times. If we find out the total time complexity, it is T = O(n^2 + n). Since `n` is insignificant compared to `n^2`, it doesn't affect the number of operations.
-**for example** if we take n = 100 then n2 willbe = 10000 and n= 100 so that's not afffecting the number of operations and so we ignore it and take. Therefore, we remove `n`, and we drop non-dominants, resulting in O(n^2) as the worst-case time complexity.
+**For example**, if we take n = 100, then n^2 will be 10000 and n = 100, so that's not affecting the number of operations, and so we ignore it and take. Therefore, we remove `n`, and we drop non-dominants, resulting in O(n^2) as the worst-case time complexity.
 
 ## O(1) - Constant Time
 
@@ -209,7 +208,7 @@ function addItems(n) {
 
 In the above code, all we are doing is one operation: addition. The number of operations is one, so it doesn't matter if `n` is 1 or `n` is a million; the number of operations is going to be one.
 
-**let's take  another code **
+**Let's take another code:**
 
 ```javascript
 function addItems(n){
@@ -217,11 +216,11 @@ function addItems(n){
 }
 ```
 
+In the above code, we are doing four operations. We are doing four additions. But it's still O(1) as we are simplifying this.
 
-In the above code we are doing four operations .We are doing four addition  But it still O(1) as we are simplifying this .
+So, O(1) is referred to as constant time
 
-
-So, O(1) is referred to as constant time. In this situation, where we have four operations (two additions), it's four operations that are constant, no matter what `n` is. The number of operations does not change as `n` changes.
+. In this situation, where we have four operations (two additions), it's four operations that are constant, no matter what `n` is. The number of operations does not change as `n` changes.
 
 #### NOTE - BASICALLY, Time complexity is the measurement of the number of operations. So, in the above case, the number of operations is still 1.
 
@@ -261,9 +260,7 @@ Additionally, sorting algorithms often exhibit a time complexity of O(n log n), 
 
 ```javascript
 // Example of binary search
-// Time complexity is O(log n base 2
-
-)
+// Time complexity is O(log n base 2)
 ```
 
 **Output:** No visible output as it is an example of binary search.
@@ -286,7 +283,7 @@ function logItems(a, b) {
 // Time complexity is O(a + b)
 ```
 
-Both loops run for different times. For example, `a` can be 10, but `b` can be a million. So we cannot say that the time complexity is O(n + n) or O(2n); it is`O(a + b)`. This holds true for nested loops as well:
+Both loops run for different times. For example, `a` can be 10, but `b` can be a million. So we cannot say that the time complexity is O(n + n) or O(2n); it is O(a + b). This holds true for nested loops as well:
 
 ```javascript
 function logItems(a, b) {
@@ -305,23 +302,24 @@ function logItems(a, b) {
 Different array operations have varying time complexities:
 
 1. **Push/Pop:** O(1) - These operations don't require changing indices of the array.
-2. **Shift/Unshift:** O(n) - Shifting and unshifting require reindexing every element in the array  that's why O(n) operations so time complexity O(n) ..
+2. **Shift/Unshift:** O(n) - Shifting and unshifting require reindexing every element in the array, that's why O(n) operations so time complexity O(n).
 3. **Middle Operations:** O(n) - Adding or removing from the middle of the array requires reindexing.
 
-for example 
+For example:
 
-myArray .splice(1,0,"hi")
+```javascript
+myArray.splice(1, 0, "hi");
+```
 
-so we still have to reIndex the array elements from the point we add or remove elements .
-
-so T= O(1/2 n) 
-but we don't take avg case in big O  we take worst case and also we remove constant so therefore.
+So we still have to reIndex the array elements from the point we add or remove elements.
+So T = O(1/2 n)
+but we don't take avg case in big O we take worst case and also we remove constant so therefore.
 
 T = O(n)
 
-4. **Finding an Item:** 
+4. **Finding an Item:**
    - a) O(n) for linear search
-   - b) O(1) for index search. If you need to access elements by index, arrays are efficient. 
+   - b) O(1) for index search. If you need to access elements by index, arrays are efficient.
 
 **Note - If you need to access things by index, arrays are a great data structure. If you need to add or remove things from the beginning, maybe it's not the best data structure for you, and you should consider a different data structure.**
 
@@ -330,8 +328,6 @@ T = O(n)
 ![Image 1](JS_Dsa/Time_and_Space_complexity/image1.png)
 ![Image 2](JS_Dsa/Time_and_Space_complexity/image2.png)
 ![Image 3](JS_Dsa/Time_and_Space_complexity/image3.png)
-```
-
 
 #Big O Cheat Sheet:
 
@@ -343,12 +339,11 @@ O(log N) Logarithmic- usually searching algorithms have log n if they are sorted
 
 O(n) Linear- for loops, while loops through n items
 
-O(n log(n)) Log Liniear- usually sorting operations
+O(n log(n)) Log Linear- usually sorting operations
 
-O(n^2) Quadratic- every element in a collection needs to be compared to ever other element. Two
-nested loops
+O(n^2) Quadratic- every element in a collection needs to be compared to ever other element. Two nested loops
 
-O(2^n) Exponential- recursive algorithms that solves a problem of size N
+O(2^n) Exponential- recursive algorithms that solve a problem of size N
 
 O(n!) Factorial- you are adding a loop for every element
 
@@ -372,20 +367,16 @@ Rule 4: Drop Non-dominant terms
 
 # Space Complexity --
 
-when a programm executes things it has two way to remember things .
+when a programm executes things it has two ways to remember things.
 
 1) Heap . - It is usually where we store variables that we assign value.
-2) Stack - It is where we keep track function call . 
-
-
+2) Stack - It is where we keep track function call.
 
 ##-What causes Space complexity?-
 Variables
 Data Structures
 Function Call
 Allocations
-
-
 
 Example Code *practise space complexity )*
 
@@ -413,12 +404,11 @@ function arrayOfHiNTimes(n) {
 arrayOfHiNTimes(6); // O(n) space complexity as it creates an array with length N
 ```
 
+**NOTE** -
+`"hellllllldfdfljfsfjsf".length //O(1) Time complexity`
 
-**NOTE** - 
-`"hellllllldfdfljfsfjsf".length //O(1) Time complexity` 
+A `string length lookup in JavaScript` is not a `method` it is `just a property` (.length property) that's why it is just of O(1).
+It can be different in other languages.
 
-A `string length lookup in javascript` is not a `method` it is `just a property` (.length property) that's why it is justof O(1) . 
- It can be different in other languages.
-
-
-# NOTE - BIG O says which functions , algorithm or code is best .
+# NOTE - BIG O says which functions, algorithms, or code is best.
+```
