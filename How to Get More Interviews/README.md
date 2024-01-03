@@ -1,8 +1,7 @@
 #  Getting More Interviews
 
-## 1. Apply at the Company (100 Companies)
 
-## 2. Make a Good Resume
+### 1. Apply at the Company (100 Companies)
 
 ### a) Resume 
 ### b) LinkedIn Profile
