@@ -70,7 +70,7 @@ Measured by the number of operations, not actual time. Determines which code run
 
 Measures memory usage, comparing how much space different codes use.
 
-#### Greek Letters and Cases
+## Greek Letters and Cases
 
 Three Greek letters represent different cases in time and space complexity:
 
