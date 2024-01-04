@@ -9,7 +9,11 @@ function splitter ( n ){
   while(newNo >0){
     let rem = newNo%10;
     // console.log(rem);
-    if(n % rem === 0){
+    if(rem != 0 && n % rem == 0){
+    // Ensure rem is not zero and n is divisible by rem
+        // This check prevents potential division by zero scenarios
+        // and ensures accurate counting of digits that evenly divide 'n'.
+
       count ++;
     }
     newNo = Math.floor(newNo/10);
