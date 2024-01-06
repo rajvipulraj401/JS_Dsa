@@ -1,0 +1,52 @@
+// Reverse Integer (Method 2: Brute Force)
+
+let reverseBruteForce = function (x) {
+  // Ensure x is an integer
+  if (!Number.isInteger(x)) {
+    console.log("Invalid input. Please provide an integer.");
+    return 0;
+  }
+
+  let reversed = 0;
+  let sign = x < 0 ? -1 : 1;
+  x = Math.abs(x);
+
+  while (x > 0) {
+    let digit = x % 10;
+    reversed = reversed * 10 + digit;
+    x = Math.floor(x / 10);
+  }
+
+  reversed *= sign;
+
+  console.log(reversed);
+  return reversed;
+};
+
+// Sample Usage
+reverseBruteForce(1534236469);
+
+/*
+Brute Force Logic:
+- Given an integer, reverse its digits using brute force.
+
+Steps (Method 2: Brute Force):
+1) Ensure x is an integer.
+2) Initialize reversed to 0 and sign to 1.
+3) If x is negative, set sign to -1 and make x positive.
+4) While x is greater than 0:
+   4.1) Extract the last digit using x % 10.
+   4.2) Update reversed by multiplying it by 10 and adding the extracted digit.
+   4.3) Reduce x by removing the last digit using Math.floor(x / 10).
+5) Multiply the reversed result by the sign to account for the original sign.
+6) Output the reversed result.
+
+Dry Run:
+- Input x = 1534236469
+- Ensure x is positive and initialize reversed to 0, sign to 1.
+- While x is greater than 0:
+  - Extract last digit (9), update reversed (0 * 10 + 9 = 9), reduce x (153423646).
+  - Extract last digit (6), update reversed (9 * 10 + 6 = 96), reduce x (15342364).
+  - ... Continue the process.
+- Multiply the reversed result by the sign (96) and output it.
+*/
