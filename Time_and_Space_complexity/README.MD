@@ -333,7 +333,7 @@ T = O(n)
 
 
 
-#Big O Cheat Sheet:
+# Big O Cheat Sheet:
 
 -Big Os
 
