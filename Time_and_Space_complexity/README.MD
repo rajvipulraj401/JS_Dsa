@@ -335,7 +335,7 @@ T = O(n)
 
 # Big O Cheat Sheet:
 
--Big Os
+## -Big Os
 
 O(1) Constant- no loops
 
