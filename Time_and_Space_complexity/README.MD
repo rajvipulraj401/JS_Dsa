@@ -386,9 +386,13 @@ when a programm executes things it has two way to remember things .
 
 
 ##-What causes Space complexity?-
+
 Variables
+
 Data Structures
+
 Function Call
+
 Allocations
 
 
