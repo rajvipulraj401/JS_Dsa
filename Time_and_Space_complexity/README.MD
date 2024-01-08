@@ -327,9 +327,9 @@ T = O(n)
 
 ---
 
-(![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/Time_and_Space_complexity/image1.png)
-![Image 2](JS_Dsa/Time_and_Space_complexity/image2.png)
-![Image 3](JS_Dsa/Time_and_Space_complexity/image3.png)
+![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/Time_and_Space_complexity/image1.png)
+![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/Time_and_Space_complexity/image2.png)
+![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/Time_and_Space_complexity/image3.png)
 ```
 
 
