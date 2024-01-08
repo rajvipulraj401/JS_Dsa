@@ -325,12 +325,12 @@ T = O(n)
 
 **Note - If you need to access things by index, arrays are a great data structure. If you need to add or remove things from the beginning, maybe it's not the best data structure for you, and you should consider a different data structure.**
 
----
+
 
 ![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/Time_and_Space_complexity/image1.png)
 ![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/Time_and_Space_complexity/image2.png)
 ![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/Time_and_Space_complexity/image3.png)
-```
+
 
 
 #Big O Cheat Sheet:
