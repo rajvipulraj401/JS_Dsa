@@ -325,17 +325,17 @@ T = O(n)
 
 **Note - If you need to access things by index, arrays are a great data structure. If you need to add or remove things from the beginning, maybe it's not the best data structure for you, and you should consider a different data structure.**
 
----
-
-![Image 1](JS_Dsa/Time_and_Space_complexity/image1.png)
-![Image 2](JS_Dsa/Time_and_Space_complexity/image2.png)
-![Image 3](JS_Dsa/Time_and_Space_complexity/image3.png)
-```
 
 
-#Big O Cheat Sheet:
+![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/Time_and_Space_complexity/image1.png)
+![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/Time_and_Space_complexity/image2.png)
+![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/Time_and_Space_complexity/image3.png)
 
--Big Os
+
+
+# Big O Cheat Sheet:
+
+## -Big Os
 
 O(1) Constant- no loops
 
@@ -362,12 +362,18 @@ Comparisons (<, >, ==)
 Looping (for, while)
 Outside Function call (function())
 
-## -Rule BookRule 1: Always worst Case
+## -Rule Book
+
+Rule 1: Always worst Case
+
 Rule 2: Remove Constants
+
 Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be
 O(a*b)
+
 + for steps in order
 * for nested steps
+
 Rule 4: Drop Non-dominant terms
 
 # Space Complexity --
@@ -380,9 +386,13 @@ when a programm executes things it has two way to remember things .
 
 
 ##-What causes Space complexity?-
+
 Variables
+
 Data Structures
+
 Function Call
+
 Allocations
 
 
