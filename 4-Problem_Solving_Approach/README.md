@@ -129,7 +129,7 @@ Write steps in comments so that you can then code easily.
 ## 5. refactor.(try and improve your code)(readability )
 
 
-![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/Problem_Solving_Approach/code.png)
+![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/4-Problem_Solving_Approach/code.png)
 
 
-![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/Problem_Solving_Approach/code2.png)
+![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/4-Problem_Solving_Approach/code2.png)
