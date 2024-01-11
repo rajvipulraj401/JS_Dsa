@@ -28,7 +28,7 @@ It's the foundation for being a succcessful problem solving and developer .
 
 4.Solve/Simplify
 
-5. Look Back and Refactor
+5.Look Back and Refactor
 
 
 
@@ -53,7 +53,7 @@ It's the foundation for being a succcessful problem solving and developer .
 
 /* 
 Let's take an example.
-Write a function which takes two numbers and returns their sum.
+Q) Write a function which takes two numbers and returns their sum.
 
 
 1.Can i restate the problem in my own words so that i can understand the problem?
@@ -96,7 +96,7 @@ Explore Examples with Invalid Inputs
 ```javascript
 
 //for example--
-//Write a function which takes in a string and returns counts of each character in the string.
+//Q2)Write a function which takes in a string and returns counts of each character in the string.
 
 // 1- Start with Simple Examples
 
