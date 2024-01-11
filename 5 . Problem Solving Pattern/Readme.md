@@ -323,7 +323,8 @@ function search(array, val) {
 
 ```
 
-	# Recap
+	#  Recap
+
 Developing a problem solving approach is incredibly important
 Thinking about code before writing code will always make you solve problems faster
 Be mindful about problem solving patterns
