@@ -20,15 +20,19 @@ It's the foundation for being a succcessful problem solving and developer .
 
 # Problem Solving 
 
-Understand the Problem
-Explore Concrete Examples
-Break It Down
-Solve/Simplify
-Look Back and Refactor
+1.Understand the Problem
+
+2.Explore Concrete Examples
+
+3.Break It Down
+
+4.Solve/Simplify
+
+5. Look Back and Refactor
 
 
 
-## Understand The Problem
+## 1. Understand The Problem
 
 
 1) Can i restate the problem in my own words so that i can understand the problem?
@@ -42,12 +46,16 @@ Look Back and Refactor
 5) How should i label the important pieces of data that are a part of the problem?
 
 
-Let's take an example.
 
-Write a function which takes two numbers and returns their sum.
 
 ```javascript
+
+
 /* 
+Let's take an example.
+Write a function which takes two numbers and returns their sum.
+
+
 1.Can i restate the problem in my own words so that i can understand the problem?
 // add two number 
 
@@ -70,13 +78,13 @@ Write a function which takes two numbers and returns their sum.
 
 
 5. How should i label the important pieces of data that are a part of the problem?
-
-//
-
-
 */
+```
 
-## Explore Concrete Examples
+
+
+
+## 2. Explore Concrete Examples
 
 
 ### EXPLORE EXAMPLES
@@ -87,26 +95,26 @@ Explore Examples with Invalid Inputs
 
 ```javascript
 
-for example
-Write a function which takes in a string and returns counts of each character in the string.
+//for example--
+//Write a function which takes in a string and returns counts of each character in the string.
 
-// 1 Start with Simple Examples
+// 1- Start with Simple Examples
 
 charCount("aaaa") //{a:4,b:0}
 charCount("hello") //{h:1,e:1,l:2,o:1}
 
-// 2 Progress to More Complex Examples
+// 2- Progress to More Complex Examples
 
 "my phone number is 182763"
 
 "Hello hi"
 //Do we want to account for spaces , Casing , numbers, dollarsigns and other characters.
 
-//3  Explore Examples with Empty Inputs
+//3-  Explore Examples with Empty Inputs
 
 charCount("")
 
-// 4.  Explore Examples with Invalid Inputs
+// 4-  Explore Examples with Invalid Inputs
 
 charCount(null)
 
@@ -116,9 +124,9 @@ charCount(null)
 
 Write steps in comments so that you can then code easily.
 
-##4. Solve/simplify
+## 4. Solve/simplify
 
-##5. refactor.(try and improve your code)(readability )
+## 5. refactor.(try and improve your code)(readability )
 
 
 ![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/Problem_Solving_Approach/code.png)
