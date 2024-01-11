@@ -302,11 +302,35 @@ function logItems(a, b) {
 
 ## Big O of Arrays
 
-Different array operations have varying time complexities:
+
+### Big O of Arrays
+
+1. Insertion - It depends...
+
+( if at end then O(1) and if at beginning or in mid then O(N) )
+
+2. Removal - It depends...
+
+( if at end then O(1) and if at beginning or in mid then O(N) )
+
+3. Searching - O(N)
+
+4. Access - O(1)
+
+
+
+
+
+### Different array operations have varying time complexities:
 
 1. **Push/Pop:** O(1) - These operations don't require changing indices of the array.
 2. **Shift/Unshift:** O(n) - Shifting and unshifting require reindexing every element in the array  that's why O(n) operations so time complexity O(n) ..
 3. **Middle Operations:** O(n) - Adding or removing from the middle of the array requires reindexing.
+
+4. **concat/slice:** O(n) - It just grows with the total size of new array that is being created after mergin .
+5. **splice:** O(n)
+6. **sort:** O(n*logN)
+7. **forEach/map/filter/reduce/etc** - O(n)
 
 for example 
 
@@ -326,6 +350,41 @@ T = O(n)
 **Note - If you need to access things by index, arrays are a great data structure. If you need to add or remove things from the beginning, maybe it's not the best data structure for you, and you should consider a different data structure.**
 
 
+## Big O of Objects
+
+Objects  are unordered data structure and everything is stored in key value pairs.
+
+ex->
+```javascript
+let instructor ={
+firstName : "Kelly",
+isInstructor: true,
+favoriteNumbers: [1,2,3,4]
+}
+```
+
+WHEN to use objects.
+
+(1) when you don't need order.
+(2) when you need fast access/ insertion and removal.
+
+### Different Object operations have varying time complexities:
+
+1. **Insertion:** O(1) - These operations don't require changing indices of the array.
+2. **Removal:** O(1) - Shifting and unshifting require reindexing every element in the array  that's why O(n) operations so time complexity O(n) ..
+3. **Access:** O(1)
+4. **Searching:** O(N)
+
+
+### Big O of Object Methods
+
+Object.keys - O(n)
+
+Object.entries - O(n)
+
+Object.values - O(n)
+
+hasOwnProperty - O(1)
 
 ![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/Time_and_Space_complexity/image1.png)
 ![Alt Text](https://raw.githubusercontent.com/rajvipulraj401/JS_Dsa/main/Time_and_Space_complexity/image2.png)
