@@ -4,7 +4,7 @@
 
 Frequency Counter
 
-Multiple Pointers
+Multiple Pointers /two pointers, three...or many
 
 Sliding Window
 
